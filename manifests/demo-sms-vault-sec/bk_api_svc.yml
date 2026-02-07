@@ -4,7 +4,7 @@ metadata:
   labels:
     app: demo-sms-api
   name: demo-sms-api-cluster
-  namespace: demo-sms
+  namespace: demo-sms-api
 spec:
   ports:
   - port: 80

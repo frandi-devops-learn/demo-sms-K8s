@@ -4,7 +4,7 @@ metadata:
   labels:
     app: demo-sms-api
   name: demo-sms-api
-  namespace: demo-sms
+  namespace: demo-sms-api
 spec:
   replicas: 2
   selector:

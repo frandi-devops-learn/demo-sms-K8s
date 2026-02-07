@@ -2,13 +2,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: demo-sms-ingress
-  namespace: demo-sms
+  namespace: demo-sms-api
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: api.demo-sms.local
+  - host: api.demo-sms-api.local
     http:
       paths:
       - path: /

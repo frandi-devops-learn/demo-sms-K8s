@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: demo-sms-db
-  namespace: demo-sms
+  namespace: demo-sms-api
 spec:
   serviceName: "demo-sms-db"
   replicas: 1
