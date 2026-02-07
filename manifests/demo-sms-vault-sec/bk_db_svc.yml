@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: demo-sms-db
+  name: demo-sms-db-svc
+  namespace: demo-sms
+spec:
+  ports:
+  - port: 5432
+    protocol: TCP
+    targetPort: 5432
+  selector:
+    app: demo-sms-db
+  type: ClusterIP
+status:
+  loadBalancer: {}
