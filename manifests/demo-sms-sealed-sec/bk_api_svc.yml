@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: demo-sms-api
+  name: demo-sms-api-cluster
+  namespace: demo-sms
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: demo-sms-api
+  type: ClusterIP
