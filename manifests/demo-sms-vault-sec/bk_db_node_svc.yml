@@ -10,7 +10,7 @@ spec:
   - port: 5432
     protocol: TCP
     targetPort: 5432
-    nodePort: 32110
+    nodePort: 32111
   selector:
     app: demo-sms-db
   type: NodePort
