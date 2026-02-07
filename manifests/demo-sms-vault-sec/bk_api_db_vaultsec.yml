@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: postgres-secret
-  namespace: demo-sms
+  namespace: demo-sms-api
   annotations:
     avp.kubernetes.io/path: "credentials/data/app"
 type: Opaque
