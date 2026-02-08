@@ -31,10 +31,7 @@ spec:
         - containerPort: 3000
         env:
           - name: DB_HOST
-            valueFrom:
-              secretKeyRef:
-                name: postgres-secret
-                key: postgres-host
+            value: "demo-sms-db-svc"
           - name: DB_USER
             valueFrom:
               secretKeyRef:
