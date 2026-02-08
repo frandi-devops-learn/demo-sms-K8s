@@ -33,15 +33,9 @@ spec:
           - name: DB_HOST
             value: "demo-sms-db-svc"
           - name: DB_USER
-            valueFrom:
-              secretKeyRef:
-                name: postgres-secret
-                key: postgres-user
+            value: "dbadmin"
           - name: DB_NAME
-            valueFrom:
-              secretKeyRef:
-                name: postgres-secret
-                key: postgres-name
+            value: "uatdb"
           - name: DB_PASSWORD
             valueFrom:
               secretKeyRef:
