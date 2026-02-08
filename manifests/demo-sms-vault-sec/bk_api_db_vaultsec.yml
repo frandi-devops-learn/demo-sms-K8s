@@ -4,7 +4,7 @@ metadata:
   name: postgres-secret
   namespace: demo-sms-api
   annotations:
-    avp.kubernetes.io/path: "credentials/data/app"
+    avp.kubernetes.io/path: "app-credentials/credentials/data/app"
 type: Opaque
 stringData:
   postgres-host: <postgres-host>
